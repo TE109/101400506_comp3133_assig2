@@ -1,0 +1,105 @@
+/* You can add global styles to this file, and also import other style files */
+body {
+    font-family: Arial;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+  }
+  
+  h2 {
+    font-family: 'Helvetica Neue';
+    margin-bottom: 10px;
+    color: #333;
+  }
+    
+  button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+    border-radius: 4px;
+    background-color: #007BFF;
+    color: #fff;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+  button:focus {
+    outline: none;
+  }
+  
+  form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+  }
+  
+  form input, form select, form textarea {
+    width: 95%;
+    padding: 12px;
+    font-size: 1rem;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    margin-bottom: 15px;
+  }
+  
+  form input[type="text"],
+  form input[type="email"],
+  form input[type="password"] {
+    background-color: #f9f9f9;
+  }
+  
+  form input:focus, form select:focus, form textarea:focus {
+    border-color: #007BFF;
+    outline: none;
+  }
+  
+  form label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    display: block;
+    color: #333;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+  }
+  
+  table th, table td {
+    padding: 12px;
+    text-align: left;
+    border: 1px solid #ddd;
+  }
+  
+  table th {
+    background-color: #f2f2f2;
+    color: #333;
+  }
+  
+  
+  a {
+    text-decoration: none;
+    color: white;
+  }
+  
+  
+  .container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    align-items: center;
+  }
+  
+  .container-fluid {
+    width: 100%;
+    padding: 20px;
+  }
+  

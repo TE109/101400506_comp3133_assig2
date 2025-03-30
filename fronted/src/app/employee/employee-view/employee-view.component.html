@@ -1,0 +1,24 @@
+<div *ngIf="authBool; else loggedOut">
+    <div class="container">
+        <button (click)="logout()">Logout</button>
+        <h2>Employee Details</h2>
+        <p><strong>ID:</strong> {{ employee._id }}</p>
+        <p><strong>First Name:</strong> {{ employee.first_name }}</p>
+        <p><strong>Last Name:</strong> {{ employee.last_name }}</p>
+        <p><strong>Email:</strong> {{ employee.email }}</p>
+        <p><strong>Gender:</strong> {{ employee.gender }}</p>
+        <p><strong>Designation:</strong> {{ employee.designation }}</p>
+        <p><strong>Salary:</strong> ${{ employee.salary }}</p>
+        <p><strong>Date of Joining:</strong> {{ employee.date_of_joining | date}}</p>
+        <p><strong>Department:</strong> {{ employee.department }}</p>
+        <p><strong>Created At:</strong> {{ employee.created_at | date }}</p>
+        <p><strong>Updated At:</strong> {{ employee.updated_at | date}}</p>   
+        
+        <button><a routerLink="/emList">Go to List</a></button>
+    </div>
+</div>
+    
+    <ng-template #loggedOut>
+      <button><a routerLink="">Login</a></button>
+    </ng-template>
+  

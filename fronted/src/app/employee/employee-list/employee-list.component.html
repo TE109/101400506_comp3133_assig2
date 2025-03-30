@@ -1,0 +1,36 @@
+<div *ngIf="authBool; else loggedOut">
+  <button><a routerLink="/emSearch">Search by Department or Designation</a></button>
+  <br>
+  <button><a routerLink="/emAdd">Add New Employee</a></button> <br>
+  <button (click)="logout()">Logout</button>
+    <table>
+      <thead>
+        <tr>
+          <th>First Name</th>
+          <th>Last Name</th>
+          <th>ID</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let employee of empList; let i = index">
+          <td>{{ employee.employee_first_name }}</td>
+          <td>{{ employee.employee_last_name }}</td>
+          <td>{{ employee.employee_id }}</td>
+          <td>
+            <button><a [routerLink]="['/emEdit', employee.employee_id]">Edit Details</a></button>
+            <button (click)="deleteEmployee(employee.employee_id)">Delete</button>
+            <button><a [routerLink]="['/emView', employee.employee_id]">View Details</a></button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+
+    
+
+  </div>
+  
+  <ng-template #loggedOut>
+    <button><a routerLink="">Login</a></button>
+  </ng-template>
+  

@@ -1,0 +1,53 @@
+
+<h2>Add Employee</h2>
+    <button (click)="logout()">Logout</button>
+    <form [formGroup]="createForm" (ngSubmit)="submitForm()">
+  
+      <div class="form-group">
+        <label for="first_name">First Name</label>
+        <input type="text" class="form-control" id="first_name" formControlName="first_name">
+      </div>
+  
+      <div class="form-group">
+        <label for="last_name">Last Name</label>
+        <input type="text" class="form-control" id="last_name" formControlName="last_name">
+      </div>
+  
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input type="email" class="form-control" id="email" formControlName="email">
+      </div>
+  
+      <div class="form-group">
+        <label for="gender">Gender</label>
+        <select class="form-control" id="gender" formControlName="gender">
+          <option value="" disabled>Select Gender</option>
+          <option value="Male">Male</option>
+          <option value="Female">Female</option>
+          <option value="Other">Other</option>
+        </select>
+      </div>
+  
+      <div class="form-group">
+        <label for="designation">Designation</label>
+        <input type="text" class="form-control" id="designation" formControlName="designation">
+      </div>
+  
+      <div class="form-group">
+        <label for="salary">Salary (Must be at least $1000)</label>
+        <input type="number" class="form-control" id="salary" formControlName="salary">
+      </div>
+  
+      <div class="form-group">
+        <label for="date_of_joining">Date of Joining</label>
+        <input type="date" class="form-control" id="date_of_joining" formControlName="date_of_joining">
+      </div>
+  
+      <div class="form-group">
+        <label for="department">Department</label>
+        <input type="text" class="form-control" id="department" formControlName="department">
+      </div>
+  
+      <button type="submit">Submit</button>
+      <button><a routerLink="/emList">Go to List</a></button>
+    </form>  
